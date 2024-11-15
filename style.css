@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body{
+    background-color: hsl(203, 41%, 72%);
+
+}
+
+.main_form{
+    justify-content: center;
+    display: flex;
+    margin-top: 110px;
+}
+
+.calculator{
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+.results{
+    padding: 30px;
+  
+    border-top-right-radius: 20px;
+    
+    border-bottom-right-radius: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+}
+
+
+.calculator_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.calculator_header a{
+   color: gray; 
+}
+.btn{
+    margin-top: 40px; 
+    width: 200px;
+    height: 40px;
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.result_price{
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border-top: 2px solid yellow; 
+    width: 340px;
+    height: 200px;
+    background-color: hsl(201, 54%, 10%);
+}
+
+
+@media (min-width:360px){
+    .main_form{
+        align-items: center;
+        flex-direction: column;
+    }
+    .calculator{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .results{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media (min-width:568px){
+    .main_form{
+        align-items: center;
+        flex-direction: column;
+    }
+    .calculator{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .results{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+
+@media (min-width:768px){
+    .main_form{
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .calculator{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .results{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
